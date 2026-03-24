@@ -9,14 +9,10 @@ dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def start(message: types.Message):
-    await message.answer("✅ Бот работает! Привет из Сорокино!")
-
-@dp.message(Command("help"))
-async def help_cmd(message: types.Message):
-    await message.answer("Команды:\n/start - приветствие\n/help - помощь")
+    await message.answer("✅ Бот работает!")
 
 async def main():
-    print("🚀 Бот запущен!")
+    print("Бот запущен")
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
