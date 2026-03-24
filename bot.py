@@ -3,7 +3,7 @@ import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("7925155197:AAHsae10cg2J7It0DVv--tmdFN8eeptEMm0")
 
 if not BOT_TOKEN:
     print("❌ Токен не найден!")
